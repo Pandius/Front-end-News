@@ -28,10 +28,10 @@ class Article extends Component {
     }
 
     render() {
-        const { article, isLoading, err } = this.state
+        const { article, isLoading, error } = this.state
         const { loggedInAs, article_id } = this.props
 
-        if (err) return <ErrorPage err={err} />
+        if (error) return <ErrorPage err={error} />
         if (isLoading) return <Loading text='Loading article...' />
         return (
             <div>
