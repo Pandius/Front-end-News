@@ -3,6 +3,7 @@ import * as api from '../api'
 import Loading from '../utils/Loading'
 import ErrorPage from '../utils/ErrorPage'
 import CommentAdder from './CommentAdder'
+import CommentCard from './CommentCard'
 
 
 class ArticleComments extends Component {
@@ -52,13 +53,13 @@ class ArticleComments extends Component {
                 <h3>Submitted Comments:</h3>
 
 
-                {/* <ul>
+                <ul>
                     {comments.map(comment => {
                         return (
-                            // <CommentCard key={comment.comment_id} comments={comment} handleDelete={this.handleDelete} username={username} />
+                            <CommentCard key={comment.comment_id} comments={comment} handleDelete={this.handleDelete} username={username} />
                         )
                     })}
-                </ul> */}
+                </ul>
 
             </div>
         );
