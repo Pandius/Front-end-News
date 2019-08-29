@@ -50,7 +50,6 @@ class Articles extends Component {
         const { topic } = this.props
         const { sort_by, order, p } = this.state
         api.getArticles({ topic, sort_by, order, p }).then(({ articles, total_count }) => {
-            console.log(p)
             this.setState({
                 articles: articles,
                 articlesCount: total_count,
@@ -64,7 +63,6 @@ class Articles extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        // console.log(prevState.p)
         if (prevProps.topic !== this.props.topic ||
             prevState.sort_by !== this.state.sort_by ||
             prevState.order !== this.state.order ||

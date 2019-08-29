@@ -1,18 +1,40 @@
+
+* { text-align: center;
+color: aliceblue}
+
+
 .App .articleList {
   padding-top: 3rem;
-  margin-top: 5.1rem;
-  text-align: center;
-  background-color: black;
   background-size: 100vh;
   color: aliceblue;
   background-attachment: fixed;
 }
 
+body {
+  text-align: center;
+  background-attachment: fixed;
+  background-position-y: 5rem;
+  background-repeat: no-repeat;
+  background-image: url('./pictures/wallpaper.jpg');
+
+}
+
+.topicImg {
+  text-align: center;
+  border-radius: 20%;
+  height: 20rem;
+  width: 30rem;
+
+}
+
+.topics {
+  color: aliceblue;
+}
 
 .p, .loading {
   width: 30%;
 text-align: center;
-margin-top:200px;
+margin-top:2rem;
 }
 
 .navbar {
@@ -33,23 +55,41 @@ margin-top:200px;
   padding-top: 0.8rem;
  }
 
- li  {
+ li {
    text-align: center;
    width: 20rem;
    height: 23rem;
    list-style: none;
    border: 1px white solid;
-   padding: 3px;
+   padding: 0px;
    padding-bottom: 5px;
+   padding-left: 0px;
+   margin: 20rem, 10rem;
  }
 
- body {
-   text-align: center;
+ ul {
+   padding: 5%;
+ }
+
+ .voting {
+   padding: 0.8rem;
+ }
+
+ textarea {
+   color: black;
+ }
+ .user { 
+   color: black;
+ }
+
+ button {
+   color: black;
  }
 
  ul {
    display: flex;
    flex-wrap: wrap;
+   ;
  }
 
  header {
@@ -57,3 +97,40 @@ margin-top:200px;
    text-align: center;
    font-size: 50px;
  }
+
+ /* @media (max-width: 991px) {
+ body {
+   
+  background-position-y: 15rem;
+
+ }
+ header {
+margin-top: 15;
+ }
+
+} */
+
+a:link {
+  color: red;
+
+}
+
+a:visited {
+  background-color: cyan;
+}
+
+a:hover {
+  color: rebeccapurple;
+}
+
+a:active {
+  background-color: hotpink;
+} 
+select {
+  color:black;
+}
+
+h2 {
+  padding: 2px;
+}
+
