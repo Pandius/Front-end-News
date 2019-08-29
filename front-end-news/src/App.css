@@ -51,3 +51,9 @@ margin-top:200px;
    display: flex;
    flex-wrap: wrap;
  }
+
+ header {
+   margin-top: 80px;
+   text-align: center;
+   font-size: 50px;
+ }
