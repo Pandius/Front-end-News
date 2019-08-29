@@ -5,6 +5,8 @@ import Articles from './components/Articles'
 import Navigation from './components/Navigation';
 import Article from './components/Article'
 import ErrorPage from './utils/ErrorPage'
+import Home from './components/Home';
+import Header from './components/Header';
 
 
 class App extends React.Component {
@@ -18,8 +20,12 @@ class App extends React.Component {
     return (
       <div className="App" >
         <Navigation userLoggedIn={userLoggedIn} />
+        <Header />
         <Router>
+          <Home path='/' />
           <Articles path='/articles' />
+          <Articles path='/articles/topic/:topic' loggedInAs={userLoggedIn} />
+
           <Article path='/articles/:article_id' loggedInAs={userLoggedIn} />
           <ErrorPage default />
 
