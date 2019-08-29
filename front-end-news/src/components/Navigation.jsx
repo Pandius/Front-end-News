@@ -13,8 +13,8 @@ class Navigation extends Component {
                 className="navbar"
                 collapseOnSelect
                 expand="lg"
-                bg="dark"
-                variant="dark"
+                bg="light"
+                variant="light"
                 fixed="top"
             >
                 <Navbar.Brand href="/">
@@ -26,13 +26,13 @@ class Navigation extends Component {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/articles">Articles</Nav.Link>
                         <NavDropdown title="Topics" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
+                            <NavDropdown.Item href="/articles/topic/coding">Coding</NavDropdown.Item>
+                            <NavDropdown.Item href="/articles/topic/football">
+                                Football
                 </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Item href="/articles/topic/cooking">Cooking</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/topics">
+                            <NavDropdown.Item href="/">
                                 Show all topics
                 </NavDropdown.Item>
                         </NavDropdown>
