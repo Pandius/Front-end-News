@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import northcoders from '../pictures/northcoders.png'
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from '@reach/router'
 
 
 
@@ -17,31 +18,36 @@ class Navigation extends Component {
                 variant="light"
                 fixed="top"
             >
-                <Navbar.Brand href="/">
-                    <img className="brandImg" src={northcoders} alt="northcoders logo." />
-                </Navbar.Brand>
+                <Link to='/'>
+                    <Navbar.Brand >
+                        <img className="brandImg" src={northcoders} alt="northcoders logo." />
+                    </Navbar.Brand>
+                </Link>
+
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/articles">Articles</Nav.Link>
+                        <Link to="/">Home   </Link>
+                        <Link to="/articles"> Articles</Link>
                         <NavDropdown title="Topics" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="/articles/topic/coding">Coding</NavDropdown.Item>
-                            <NavDropdown.Item href="/articles/topic/football">
-                                Football
-                </NavDropdown.Item>
-                            <NavDropdown.Item href="/articles/topic/cooking">Cooking</NavDropdown.Item>
+                            <Link to="/articles/topic/coding" > Coding</Link>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/">
-                                Show all topics
-                </NavDropdown.Item>
+
+                            <Link to="/articles/topic/football">Football </Link>
+                            <NavDropdown.Divider />
+
+                            <Link to="/articles/topic/cooking">Cooking</Link>
+                            <NavDropdown.Divider />
+                            <Link to="/"> Show all topics
+
+                            </Link>
                         </NavDropdown>
                     </Nav>
-                    <Nav>
-                        User Logged in: {this.props.userLoggedIn}
+                    <Nav className="user">
+                        User Logged in: <br /> {this.props.userLoggedIn}
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
+            </Navbar >
         );
     }
 }
