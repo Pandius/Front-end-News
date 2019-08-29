@@ -43,9 +43,9 @@ class ArticleComments extends Component {
     };
 
     render() {
-        const { comments, isLoading, err } = this.state
+        const { comments, isLoading, error } = this.state
         const { article_id, username } = this.props
-        if (err) return <ErrorPage err={err} />
+        if (error) return <ErrorPage err={error} />
         if (isLoading) return <Loading text='Loading comments...' />
         return (
             <div>
