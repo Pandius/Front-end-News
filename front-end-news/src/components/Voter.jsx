@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styles from './Voter.module.css'
 import { addVote } from '../api'
+import { Button } from 'react-bootstrap'
 
 
 
@@ -10,19 +10,26 @@ class Voter extends Component {
     }
 
     render() {
+        const { changeVotes } = this.state
         return (
-            <div>
-                <button className={this.state.changeVotes >= 1 ? styles.disable_up : styles.enable_up}
+            <div className="voting">
+                <Button
+                    className="votingUpButton"
+                    variant="success"
                     onClick={() => this.voteAdder(1)}
-                    disabled={this.state.changeVotes === 1}><span role="img" aria-label="thumbsUp">👍</span></button>
-
-                <p> Votes: {this.props.votes + this.state.changeVotes}</p>
-
-                <button className={this.state.voteMod === -1 ? styles.disable_down : styles.enable_down}
+                    disabled={changeVotes === 1}
+                >
+                    Like it!
+            </Button>
+                <p> Votes: <br /> {this.props.votes + changeVotes}</p>
+                <Button
+                    className="votingDownButton"
+                    variant="danger"
                     onClick={() => this.voteAdder(-1)}
-                    disabled={this.state.changeVotes === -1} ><span role="img" aria-label="thumbsDown">👎</span></button>
-
-
+                    disabled={changeVotes === -1}
+                >
+                    Dislike it.
+            </Button>
             </div>
         );
     }
