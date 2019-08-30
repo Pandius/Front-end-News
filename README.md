@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+README - NC News
+NC News is a news aggregation site built in React making API calls from the back end server. It allows users to view web content and enter in discussion by adding and deleteing comments, and also voting on the content.
 
-## Available Scripts
+NC News Front-End
+Deployed on Netlify: https://stupefied-hermann-327237.netlify.com/
+Github Link: https://github.com/Pandius/New-NC-news.git
+NC News Back-End
+Hosted on Heroku: https://ncnewsbedos.herokuapp.com/api
+Github Link:https://github.com/Pandius/be-NC-News.git
+Dependencies
+Built with React
+react-Bootstrap 1.0.0-beta.12
+bootstrap ^4.3.1
+@reach/router ^1.2.1
+axios ^0.19.0
+react ^16.9.0
+react-dom ^16.9.0
+react-scripts  ^3.1.1
+Getting started
+The information below will allow you to get this application up and running on your local machine.
 
-In the project directory, you can run:
+Installation
+Clone this repository on to your local machine
+git clone https://github.com/Pandius/Front-end-News.git
+Navigate into the repository
+cd fend-ncnews
+Open in your code editor
+code .
+Install dependicies
+npm install
+Start the application to run on your default browser
+npm start
+Author
+Pawel Bednarski
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Acknowledgements
+Northcoders
