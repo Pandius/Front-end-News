@@ -1,13 +1,13 @@
 
 import React from 'react';
-import LoadingGif from '../pictures/loading.gif'
+import Spinner from 'react-bootstrap/Spinner'
 
 const Loading = ({ text }) => {
     return (
         <div className="loading">
             <div>
                 <h2>{text || 'loading...'}</h2>
-                <img src={LoadingGif} alt={'LoadingGif'} />
+                <Spinner animation="grow" variant="danger" />
             </div>
         </div>
     )

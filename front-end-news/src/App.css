@@ -1,7 +1,4 @@
 
-* { text-align: center;
-color: aliceblue}
-
 
 .App .articleList {
   padding-top: 3rem;
@@ -10,32 +7,22 @@ color: aliceblue}
   background-attachment: fixed;
 }
 
-body {
-  text-align: center;
-  background-attachment: fixed;
-  background-position-y: 5rem;
-  background-repeat: no-repeat;
-  background-image: url('./pictures/wallpaper.jpg');
-
-}
 
 .topicImg {
   text-align: center;
   border-radius: 20%;
-  height: 20rem;
-  width: 30rem;
+  height: 30%;
+  width: 40%;
+  padding-bottom: 1rem;
 
 }
 
 .topics {
   color: aliceblue;
+
 }
 
-.p, .loading {
-  width: 30%;
-text-align: center;
-margin-top:2rem;
-}
+
 
 .navbar {
   text-transform: uppercase;
@@ -61,6 +48,9 @@ ul li {
   width: 60%;
   border-bottom: 2px white solid;
   margin: 15% 20%;
+}
+ul {
+  padding: 0px;
 }
 
 
@@ -92,10 +82,7 @@ ul li {
 
 
 
-a:link {
-  color: red;
 
-}
 
 a:visited {
   background-color: cyan;
@@ -114,3 +101,33 @@ h2 {
   padding: 2px;
 }
 
+
+body {
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-image: url('./pictures/wallpaper.jpg');
+  background-position: center;
+  height: 100vh;
+
+
+} 
+
+.App {
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  color: aliceblue;
+
+
+}
+
+.singleArticle {
+padding: 2rem;
+}
+
+.loading {
+  width: 30%;
+text-align: center;
+margin-top:2rem;
+color: aliceblue;
+padding: 2rem;
+}

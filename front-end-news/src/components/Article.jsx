@@ -34,7 +34,7 @@ class Article extends Component {
         if (error) return <ErrorPage err={error} />
         if (isLoading) return <Loading text='Loading article...' />
         return (
-            <div>
+            <div className="singleArticle">
                 <h2>{article.title}</h2>
                 <p>{article.body}</p>
                 <h4>Author:{article.author}</h4>

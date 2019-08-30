@@ -27,6 +27,7 @@ class Articles extends Component {
         const finalPage = pageCalc >= articlesCount
         return (
             <div className="articleList">
+                <h2>All Articles:</h2>
                 <Sorter setSortOrder={this.setSortOrder} />
 
                 <ul>
