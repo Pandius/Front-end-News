@@ -29,7 +29,7 @@ class Article extends Component {
 
     render() {
         const { article, isLoading, error } = this.state
-        const { loggedInAs, article_id } = this.props
+        const { userLoggedIn, article_id } = this.props
 
         if (error) return <ErrorPage err={error} />
         if (isLoading) return <Loading text='Loading article...' />
@@ -42,7 +42,7 @@ class Article extends Component {
                 <h4>Comments: {article.comment_count}</h4>
                 <h4>Submitted on: {dateFormat(article.created_at)}</h4>
                 <Voter votes={article.votes} id={article.article_id} type='articles' />
-                <ArticleComments article_id={article_id} username={loggedInAs} />
+                <ArticleComments article_id={article_id} username={userLoggedIn} />
             </div>
         );
     }
