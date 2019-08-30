@@ -1,5 +1,5 @@
 import React from 'react';
-import error from '../pictures/error.jpg'
+import error from '../pictures/error.png'
 
 const ErrorPage = ({ text, err }) => {
     if (err === undefined) {

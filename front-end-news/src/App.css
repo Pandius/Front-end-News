@@ -55,21 +55,14 @@ margin-top:2rem;
   padding-top: 0.8rem;
  }
 
- li {
-   text-align: center;
-   width: 20rem;
-   height: 23rem;
-   list-style: none;
-   border: 1px white solid;
-   padding: 0px;
-   padding-bottom: 5px;
-   padding-left: 0px;
-   margin: 20rem, 10rem;
- }
+ul li {
+  position: center;
+  list-style-type: none;
+  width: 60%;
+  border-bottom: 2px white solid;
+  margin: 15% 20%;
+}
 
- ul {
-   padding: 5%;
- }
 
  .voting {
    padding: 0.8rem;
@@ -86,11 +79,6 @@ margin-top:2rem;
    color: black;
  }
 
- ul {
-   display: flex;
-   flex-wrap: wrap;
-   ;
- }
 
  header {
    margin-top: 80px;
@@ -98,17 +86,11 @@ margin-top:2rem;
    font-size: 50px;
  }
 
- /* @media (max-width: 991px) {
- body {
-   
-  background-position-y: 15rem;
-
- }
- header {
-margin-top: 15;
+ option {
+   color: grey;
  }
 
-} */
+
 
 a:link {
   color: red;
@@ -123,9 +105,7 @@ a:hover {
   color: rebeccapurple;
 }
 
-a:active {
-  background-color: hotpink;
-} 
+
 select {
   color:black;
 }
