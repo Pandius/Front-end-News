@@ -23,8 +23,7 @@ class Articles extends Component {
         const { isLoading, articles, error, p, articlesCount } = this.state
         if (isLoading) return <Loading text='Loading articles...' />
         if (error) return <ErrorPage err={error} />
-        const pageCalc = p * 10
-        const finalPage = pageCalc >= articlesCount
+        const finalPage = articlesCount < 10
         return (
             <div className="articleList">
                 <h2>All Articles:</h2>
@@ -50,10 +49,10 @@ class Articles extends Component {
     fetchArticles = () => {
         const { topic } = this.props
         const { sort_by, order, p } = this.state
-        api.getArticles({ topic, sort_by, order, p }).then(({ articles, total_count }) => {
+        api.getArticles({ topic, sort_by, order, p }).then(({ articles }) => {
             this.setState({
                 articles: articles,
-                articlesCount: total_count,
+                articlesCount: articles.length,
                 isLoading: false,
                 error: null,
                 p: p
