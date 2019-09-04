@@ -47,7 +47,7 @@ ul li {
   list-style-type: none;
   width: 60%;
   border-bottom: 2px white solid;
-  margin: 15% 20%;
+  margin: 5% 20%;
 }
 ul {
   padding: 0px;
@@ -130,4 +130,14 @@ text-align: center;
 margin-top:2rem;
 color: aliceblue;
 padding: 2rem;
+}
+
+.articleCard {
+  position: relative;
+  display: flex;
+  display: table-column;
+  width: 80rem;
+  padding: 0,2rem;
+  margin: 0,5rem;
+  opacity: 0.8;
 }
