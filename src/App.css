@@ -17,6 +17,8 @@
 
 }
 
+
+
 .topics {
   color: aliceblue;
 
@@ -140,4 +142,9 @@ padding: 2rem;
   padding: 0,2rem;
   margin: 0,5rem;
   opacity: 0.8;
+}
+
+.delBtn {
+  padding: 3px;
+  margin: 5px;
 }

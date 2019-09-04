@@ -8,10 +8,11 @@ const CommentCard = (props) => {
         <li key={comment_id}>
             <p>{body}</p>
             <p>Author: {author}</p>
+            {(props.username === author ?
+                <button className="delBtn" onClick={() => props.handleDelete(comment_id)}>Delete above comment</button> : '')}
             <Voter votes={votes} id={comment_id} type='comments' />
             {<p>Added: {dateFormat(created_at)}</p>}
-            {(props.username === author ?
-                <button onClick={() => props.handleDelete(comment_id)}>Delete Comment</button> : '')}
+
         </li>
 
     );
