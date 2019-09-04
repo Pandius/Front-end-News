@@ -24,11 +24,9 @@ class App extends React.Component {
         <Router>
           <Home path='/' />
           <Articles path='/articles' />
-          <Articles path='/articles/topic/:topic' userLoggedIn={userLoggedIn} />
+          <Articles path='/articles/topic/:topic' />
           <Article path='/articles/:article_id' userLoggedIn={userLoggedIn} />
           <ErrorPage default />
-
-
         </Router>
       </div>
     );
