@@ -7,6 +7,8 @@ const Sorter = (props) => {
                     <option value="created_at">Sort by Date</option>
                     <option value="comment_count">Sort by Comments</option>
                     <option value="votes">Sort by Votes</option>
+                    <option value="author">Sort by Author</option>
+
                 </select>
             </div>
             <div>

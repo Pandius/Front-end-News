@@ -35,7 +35,7 @@ git clone https://github.com/Pandius/Front-end-News.git
 
 2. Navigate into the repository
 ```
-cd fend-ncnews
+cd Front-end-News
 ```
 
 3. Open in your code editor
