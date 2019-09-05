@@ -148,3 +148,18 @@ padding: 2rem;
   padding: 3px;
   margin: 5px;
 }
+
+form {
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+  border-bottom :  solid;
+}
+
+.commentFormHeader {
+  border-top: solid;
+}
+
+textarea {
+  width: 19rem;
+  height: 5rem;
+}
