@@ -8,6 +8,8 @@ const Sorter = (props) => {
                     <option value="comment_count">Sort by Comments</option>
                     <option value="votes">Sort by Votes</option>
                     <option value="author">Sort by Author</option>
+                    <option value="title">Sort by Title</option>
+
 
                 </select>
             </div>
